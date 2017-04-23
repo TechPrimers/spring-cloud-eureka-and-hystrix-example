@@ -14,4 +14,10 @@ eureka:
   instance:
     hostname: localhost
 
-
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
